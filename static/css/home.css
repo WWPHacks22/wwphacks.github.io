@@ -1,0 +1,31 @@
+/* @import url("https://use.typekit.net/adl3llk.css"); */
+
+@media (min-width: 576px) {
+    #banner-title {
+        font-family: alfarn, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 6em;
+        text-align: center;
+        margin-top: 2.5em;
+    }
+}
+
+#home-banner {
+    color: #f5f5f5;
+    background-color: #001534;
+    height: 100vh;
+}
+
+#banner-logo {
+    margin-top: 8em;
+}
+
+#banner-title {
+    font-family: alfarn, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 1em;
+}
