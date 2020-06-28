@@ -14,6 +14,8 @@ router.get("/home", function(req, res) {
     res.sendFile(path + "home.html");
 });
 
+
+
 app.use(express.static(__dirname + '/static'));
 
 app.use("*", function(req, res) {
