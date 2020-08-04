@@ -1,248 +1,509 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    height: 300vh;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    font-family: 'Space Mono', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.95em;
-    background-image: url("../images/bg.svg");
-    background-color: #001534;
-    background-size: cover;
-    word-spacing: 0px;
+    scroll-behavior: smooth;
+    background-color: #1A0063;
+    -webkit-overflow-scrolling: touch;
+    color: black;
+    
 }
 
-.navbar-nav li {
-    font-family: 'Space Mono', monospace;
-    font-size: 0.95em;
+#main-nav {
+    padding-top: 1em;
+    position: fixed;
+  top: 0; 
+  width: 100%; 
+  transition: 0.4s;
+  z-index: 9999;
+  
+
 }
 
-.logo{
-    justify-content: center;
+
+ul {
+
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  li {
+    display: inline;
+      padding: 0.8em;
+      font-size: 12px;
+      transition: 0.5s;
+  }
+
+  #nav-logo {
+      height: 32px;
+      margin-left: 1em;
+      vertical-align: middle;
+      padding-top: 1em;
+      
+    
+  }
+
+a {
+    text-decoration: none;
+    color: #F4F4FF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    padding: 1em;
+    font-weight: bold;
+
 }
 
-.logo-text{
-    justify-content: center;
-}
 
-#home-banner {
-    color: #f5f5f5;
-    height: 100%;
-}
 
-#banner-logo {
-    margin-top: 4em;
-    display: block;
-    width: 200%;
-    height: auto;
-    max-height: 350px;
-    max-width: 350px;
-}
 
-#banner-title {
-    font-family: alfarn, sans-serif;
-    font-weight: 200;
+
+h1 {
+    font-family: alfarn;
     font-style: normal;
-    font-size: 2.5em;
+    font-weight: bold;
+    font-size: 96px;
     text-align: center;
-    margin-top: 1em;
-    color: #f5f5f5;
+    
 }
 
-#banner-date {
-    font-family: alfarn, sans-serif;
-    font-weight: 300;
+p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
     font-style: normal;
-    font-size: 1.5em;
-    text-align: center;
-    color: #989898;
-    justify-content: center;
+    line-height: 180%;
 }
 
-#about{
-    padding-top: 5em;
-    height: auto;
-    background-color: #001534;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 5em;
+#home{
+    height: 100vh;
+   
+    
 }
 
-#about-title{
-    font-family: alfarn, sans-serif;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    color: #e103e7;
+#hero-title {
+display: flex;
+justify-content: center;
+/* padding-top: 5em; */
 }
 
-#about-text{
-    padding-top: 1em;
-    font-weight: bold;
-    color: white;
-    font-size: 1.5em;
-    text-align: left;
-}
-
-#faq{
-    padding-top: 5em;
-    height: auto;
-    background-color: black;
-    padding-bottom: 5em;
-}
-
-#faq-title{
-    font-family: alfarn, sans-serif;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-    color: red;
-}
-
-#question-text{
-    padding-top: 1em;
-    color: #dcdcdc;
-    font-family: alfarn, sans-serif;
-    text-align: left;
-    font-size:2em;
-}
-
-
-#answer-text{
-    padding-top: 1em;
-    font-weight: bold;
-    color: #dcdcdc;
-    font-size: 1.25em;
-    text-align: left;
-}
-
-
-/* #banner-logo {
-    animation: pulse 3s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.95);
-    }
-    50% {
-        transform: scale(1.0);
-    }
-    100% {
-        transform: scale(0.95);
-    }
+/* #hero-content {
+    margin-top: 5em;
 } */
 
+.logo {
+    font-family: alfarn;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    margin: 35vh 0 0 0;
+    letter-spacing: -20px;
+    padding-right: 10px;
+}
+#main-nav li {
+    display: none;
+}
 
-/* Breakpoints */
+#w1 {
+    color: #2F7EFF;
+    z-index: 2;
+}
+#w2 {
+    color: #0061FF;
+    z-index: 1;
+   
+}
+#p {
+    color: #0038FF;
+}
+
+#title-text {
+    font-size: 48px;
+    margin: 35vh 0 0 0;
+    line-height:15px;
+    word-spacing:-350px;
+    padding-left: 6px;
+    display: block;
+    padding-top: 18px;
+ 
+
+}
+
+#title-outline {
+    display: block;
+  font-family:alfarn;
+  font-size:48px;
+  color: #F4F4FF;
+  font-style:normal;
+  font-weight:bold;
+  z-index: 1;
+  
+  
+}
+
+#main-nav .icon {
+    float: right;
+    display: inline;
+    vertical-align: middle;
+    /* padding-top: 1em; */
+    margin-right: 1em;
+   
+  }
+
+#title-solid {
+    position: relative;
+    display: block;
+bottom: 12px;
+    font-size:48px;
+    color:transparent;
+    font-weight:normal;
+    position:relative;
+    padding-left: 10px;
+    -webkit-text-stroke: 1px #F4F4FF;
+    z-index: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+h3 {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+
+}
+
+button {
+display: inline;
+flex-direction: row;
+padding: 8px 10px;
+
+color: #F4F4FF;
+
+border-radius: 16px;
+flex: none;
+order: 0;
+margin: 0px 10px;
+border: none;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 0.8em;
+
+}
+
+#signup-button {
+    background: #AD5BFF;
+    vertical-align: middle;
+}
+
+#discord-button {
+    background: #4F11FF;
+    vertical-align: middle;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+
+#clipboard-svg {
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+    vertical-align: middle;
+    padding-bottom: px;
+}
+
+#discord-svg {
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+/* Grow */
+button{
+
+    cursor: pointer;
+
+    transform: translateZ(0);
+    border: none;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+button:hover,
+button:focus,
+button:active {
+    transform: scale(1.1);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    border: none;
+}
+
+#nav-logo{
+
+    cursor: pointer;
+
+    transform: translateZ(0);
+   
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+#nav-logo:hover,
+#nav-logo:focus,
+#nav-logo:active {
+    transform: scale(1.1);
+}
+
+
+#about {
+    height: 100vh;
+    color: #F4F4FF;
+   
+}
+
+
+
+
+.nav-link:hover,.nav-link:focus,.nav-link:active {
+    border-radius: 1em;
+    background: #4F11FF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  #about-title {
+    background-image: linear-gradient(198.67deg, #A088FF 7.01%, #5E9EFF 85.09%);
+    background-clip: text;
+    background-color: white;
+    padding-top: 4em;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+     
+  }
+
+  #motto-text {
+    color: #F4F4FF;
+  }
+
+  #about-text {
+    text-align: center;
+    padding: 0 15vw;
+  }
+
 
 @media screen and (min-width: 576px) {
-    #banner-title {
-        font-family: alfarn, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 5em;
-        text-align: center;
-        margin-top: 0.25em;
-        color: #f5f5f5;
+    #home{
+        height: 120vh;
+        background: url("../images/blob.svg");
+        background-repeat: no-repeat;
+        /* background-size: 180vh, 600px; */
+        background-size:100% auto;
+        background-position: right top;
+        
     }
-    #banner-date {
-        font-family: alfarn, sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        font-size: 2em;
-        text-align: center;
-        color: #989898;
+   
+   
+   
+  #nav-logo {
+    height: 32px;
+    margin-left: 1em;
+    vertical-align: middle;
+    
+    display: inline;
+  
+}
+
+    
+    #title-outline {
+        display: block;
+      font-family:alfarn;
+      font-size:96px;
+      color: #F4F4FF;
+      font-style:normal;
+      font-weight:bold;
+      z-index: 1;
+
+      
     }
+
+    h3 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+    }
+    #hero-title {
+        display: flex;
+        justify-content: center;
+        }
+
+      
+    
+    #title-solid {
+        position: relative;
+        display: block;
+    bottom: 8px;
+        font-size:96px;
+        color:transparent;
+        font-weight:normal;
+        position:relative;
+        padding-left: 15px;
+        -webkit-text-stroke: 2px #F4F4FF;
+        z-index: 0;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    .logo {
+        font-family: alfarn;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 96px;
+        text-align: center;
+        margin: 30vh 0 0 0;
+        letter-spacing: -30px;
+        padding-right: 10px;
+    }
+    
+    #title-text {
+        font-size: 48px;
+        margin: 30vh 0 0 0;
+        line-height:15px;
+        word-spacing:-350px;
+        padding-left: 10px;
+        display: block;
+        /* padding-top: 18px; */
+        padding-top: 44px;
+        
+    
+    }
+    
+    button {
+        display: flex;
+        flex-direction: row;
+        padding: 16px 40px;
+        color: #F4F4FF;
+        border-radius: 22px;
+        flex: none;
+        order: 0;
+        margin: 0px 10px;
+        border: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.25em;
+        }
+    #about-text {
+        text-align: center;
+        padding: 0 19vw;
+        
+      }
+
+      #clipboard-svg {
+        height: 24px;
+        width: 24px;
+        padding-right: 10px;
+    }
+    
+    #discord-svg {
+        height: 24px;
+        width: 24px;
+        padding-right: 10px;
+    }
+    
+    
 }
 
 @media screen and (min-width: 768px) {
-    #banner-title {
-        font-family: alfarn, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 6em;
-        text-align: center;
-        margin-top: 0.25em;
-        color: #f5f5f5;
+    #main-nav .icon {
+        display: none;
+      }
+
+      #main-nav li {
+          display: inline;
+      }
+      #main-nav {
+        padding-top: 3em;
+        position: fixed;
+      top: 0; 
+      width: 100%; 
+      transition: 0.4s;
+      z-index: 9999;
+    
     }
-    #banner-logo {
-        margin-top: 3em;
-        display: block;
-        width: 100%;
-        height: auto;
-        max-height: 350px;
-        max-width: 350px;
+    #nav-logo {
+        height: 56px;
+        margin-left: 3em;
+        vertical-align: middle;
+        padding-top: 0;
     }
 }
 
 @media screen and (min-width: 992px) {
-    #banner-title {
-        font-family: alfarn, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 6em;
-        text-align: center;
-        margin-top: 2.25em;
-        color: #f5f5f5;
-    }
-    #banner-date {
-        font-family: alfarn, sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 3em;
-        text-align: center;
-        color: #989898;
-        margin-left: 3em;
-    }
-    #banner-logo {
-        margin-top: 9em;
-        display: block;
-        width: 100%;
-        height: auto;
-        max-height: 350px;
-        max-width: 350px;
-    }
-    .navbar-nav li {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-family: 'Space Mono', monospace;
-        font-size: 1em;
-    }
+  
+a {
+    text-decoration: none;
+    color: #F4F4FF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4em;
+    padding: 1.6em;
+    font-weight: bold;
+
+}
+#nav-logo {
+    height: 56px;
+    margin-left: 3em;
+    vertical-align: middle;
+    padding-top: 0;
+
+
 }
 
 @media (min-width: 1200px) {
-    #banner-title {
-        font-family: alfarn, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 7em;
-        text-align: center;
-        margin-top: 1.75em;
-        color: #f5f5f5;
+    a {
+    
+        color: #F4F4FF;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.4em;
+        padding: 2em;
+        font-weight: bold;
+    
     }
-    #banner-logo {
-        margin-top: 8em;
-        display: block;
-        width: 100%;
-        height: auto;
-        max-height: 350px;
-        max-width: 350px;
-    }
-    #banner-date {
-        font-family: alfarn, sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 3em;
-        text-align: center;
-        color: #989898;
+    #nav-logo {
+        height: 56px;
         margin-left: 3em;
+        vertical-align: middle;
+        padding-top: 0;
+    
+    
     }
-    .navbar-nav li {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-family: 'Space Mono', monospace;
-        font-size: 1em;
-    }
+}
+
 }
