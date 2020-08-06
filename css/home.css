@@ -39,7 +39,7 @@ li {
 }
 
 #nav-logo {
-    height: 32px;
+    height: 44px;
     margin-left: 1em;
     vertical-align: middle;
     padding-top: 1em;
@@ -442,7 +442,7 @@ td {
     }
     #nav-logo {
         vertical-align: middle;
-        height: 32px;
+        height: 44px;
         margin-left: 1em;
         /* display: inline; */
     }
