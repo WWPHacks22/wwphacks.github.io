@@ -495,7 +495,7 @@ td {
 
 @media screen and (min-width: 576px) {
     #home {
-        height: 120vh;
+        height: 110vh;
         background: url("../images/blob.svg");
         background-repeat: no-repeat;
         /* background-size: 180vh, 600px; */
@@ -678,15 +678,17 @@ td {
     .col-4 {
         width: 40%;
     }
-    #faq {
-        height: 220vh;
-        padding: 5em 0;
-        text-align: center;
+    #bg-section {
         background: url("../images/faq-bg.svg");
         background-repeat: no-repeat;
         /* background-size: 180vh, 600px; */
         background-size: 100% auto;
         background-position: left;
+    }
+    #faq {
+        /* height: 0vh; */
+        padding: 5em 0;
+        text-align: center;
     }
     .faq-card {
         background: rgba(88, 105, 255, 0.2);
