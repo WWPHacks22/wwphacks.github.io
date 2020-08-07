@@ -613,6 +613,7 @@ td {
         text-align: center;
         padding: 3em 19vw;
         padding-top: 8em;
+        padding-bottom: 8em;
     }
     #clipboard-svg {
         height: 24px;
@@ -648,7 +649,6 @@ td {
         padding-top: 0;
     }
     #schedule {
-        padding-top: 12em;
         padding: 4em 0;
         background: url("../images/schedule-bg.svg");
         background-repeat: no-repeat;
