@@ -372,7 +372,7 @@ td {
 
 #sponsor {
     text-align: center;
-    padding: 6em;
+    padding-bottom: 7em;
 }
 
 #sponsor h3 {
@@ -444,8 +444,7 @@ td {
 }
 
 .col-2 {
-    width: 16.66%;
-    text-align: left;
+    width: 23%;
     padding-top: 2em;
 }
 
@@ -687,7 +686,7 @@ td {
     }
     #faq {
         /* height: 0vh; */
-        padding: 5em 0;
+        padding: 4em 0;
         text-align: center;
     }
     .faq-card {
