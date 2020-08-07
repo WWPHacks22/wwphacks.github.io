@@ -61,6 +61,14 @@ h1 {
     font-size: 34px;
 }
 
+h2 {
+    font-family: alfarn;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #F4F4FF;
+}
+
 p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
@@ -362,6 +370,52 @@ td {
     padding: 0 5vw;
 }
 
+#sponsor {
+    text-align: center;
+    padding: 6em;
+}
+
+#sponsor h3 {
+    background-image: linear-gradient(198.67deg, #F76CC6 7.01%, #5B6CF9 85.09%);
+    background-clip: text;
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#here {
+    background-image: linear-gradient(198.67deg, #A088FF 7.01%, #5E9EFF 85.09%);
+    background-clip: text;
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+#sponsor a {
+    padding: 0;
+    font-size: 20px;
+}
+
+#contact {
+    text-align: left;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+#mail {
+    padding-top: 1em;
+}
+
+#contact a {
+    padding: 0;
+}
+
 .row::after {
     content: "";
     clear: both;
@@ -375,6 +429,12 @@ td {
     justify-content: center;
 }
 
+.row-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .col {
     flex: 100%;
 }
@@ -385,6 +445,8 @@ td {
 
 .col-2 {
     width: 16.66%;
+    text-align: left;
+    padding-top: 2em;
 }
 
 .col-3 {
@@ -460,6 +522,13 @@ td {
         font-style: normal;
         font-weight: bold;
         font-size: 60px;
+    }
+    h2 {
+        font-family: alfarn;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        color: #F4F4FF;
     }
     h3 {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -544,6 +613,7 @@ td {
         color: #F4F4FF;
         text-align: center;
         padding: 3em 19vw;
+        padding-top: 8em;
     }
     #clipboard-svg {
         height: 24px;
@@ -579,6 +649,7 @@ td {
         padding-top: 0;
     }
     #schedule {
+        padding-top: 12em;
         padding: 4em 0;
         background: url("../images/schedule-bg.svg");
         background-repeat: no-repeat;
@@ -608,6 +679,7 @@ td {
         width: 40%;
     }
     #faq {
+        height: 220vh;
         padding: 5em 0;
         text-align: center;
         background: url("../images/faq-bg.svg");
@@ -626,6 +698,93 @@ td {
         border-radius: 0px 60px 60px 60px;
         /* margin: 0 2em; */
         padding: 2em;
+        -webkit-transform: translateY(40px);
+        -moz-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+        -o-transform: translateY(40px);
+        transform: translateY(40px);
+        -webkit-transition: all 0.6s ease-out;
+        -moz-transition: all 0.6s ease-out;
+        -ms-transition: all 0.6s ease-out;
+        -o-transition: all 0.6s ease-out;
+        transition: all 0.6s ease-out;
+    }
+    .faq-card.visible {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .faq-card:nth-child(2) {
+        -webkit-transform: translateY(80px);
+        -moz-transform: translateY(80px);
+        -ms-transform: translateY(80px);
+        -o-transform: translateY(80px);
+        transform: translateY(80px);
+    }
+    .faq-card:nth-child(2).visible {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .faq-card:nth-child(3) {
+        -webkit-transform: translateY(120px);
+        -moz-transform: translateY(120px);
+        -ms-transform: translateY(120px);
+        -o-transform: translateY(120px);
+        transform: translateY(120px);
+    }
+    .faq-card:nth-child(3).visible {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .faq-card:nth-child(4) {
+        -webkit-transform: translateY(160px);
+        -moz-transform: translateY(160px);
+        -ms-transform: translateY(160px);
+        -o-transform: translateY(160px);
+        transform: translateY(160px);
+    }
+    .faq-card:nth-child(4).visible {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .faq-card:nth-child(5) {
+        -webkit-transform: translateY(200px);
+        -moz-transform: translateY(200px);
+        -ms-transform: translateY(200px);
+        -o-transform: translateY(200px);
+        transform: translateY(200px);
+    }
+    .faq-card:nth-child(5).visible {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .faq-card:nth-child(6) {
+        -webkit-transform: translateY(240px);
+        -moz-transform: translateY(240px);
+        -ms-transform: translateY(240px);
+        -o-transform: translateY(240px);
+        transform: translateY(240px);
+    }
+    .faq-card:nth-child(6).visible {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
     }
 }
 

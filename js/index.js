@@ -6,9 +6,6 @@ function scrollFunction() {
         document.getElementById("main-nav").style.background = "#1A0063d9";
         document.getElementById("main-nav").style.height = "6em";
 
-
-
-
     } else {
         document.getElementById("main-nav").style.padding = "3em 0 0 0";
         document.getElementById("main-nav").style.background = "transparent";
@@ -38,3 +35,16 @@ new ScrollMagic.Scene({
     })
     .setClassToggle("#about", "visible") // add class to reveal
     .addTo(controller);
+
+var revealElements = document.getElementsByClassName("faq-card");
+for (let i = 0; i < revealElements.length; i++) {
+    // create a scene for each element
+    new ScrollMagic.Scene({
+            triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+            offset: 100, // start a little later
+            triggerHook: 0.9,
+        })
+        .setClassToggle(revealElements[i], "visible") // add class toggle
+        .addTo(controller);
+
+}
