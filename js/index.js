@@ -11,6 +11,7 @@
 // });
 
 
+
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
@@ -60,4 +61,8 @@ for (let i = 0; i < revealElements.length; i++) {
         .setClassToggle(revealElements[i], "visible") // add class toggle
         .addTo(controller);
 
+}
+
+document.getElementById("signup-button").onclick = function() {
+    location.href = "https://forms.gle/D7do9ftJQ2s9XHf48";
 }
