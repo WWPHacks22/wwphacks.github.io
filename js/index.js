@@ -67,6 +67,6 @@ document.getElementById("signup-button").onclick = function() {
     location.href = "https://forms.gle/D7do9ftJQ2s9XHf48";
 }
 
-// document.getElementById("discord-button").onclick = function() {
-//     location.href = "https://discord.gg/rmzC5tx";
-// }
+document.getElementById("discord-button").onclick = function() {
+    location.href = "https://discord.gg/rmzC5tx";
+}
