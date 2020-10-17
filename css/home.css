@@ -839,6 +839,13 @@ td {
 }
 
 @media screen and (min-width: 992px) {
+    #home {
+        background: url("../images/blob.svg");
+        background-repeat: no-repeat;
+        /* background-size: 180vh, 600px; */
+        background-size: 100% auto;
+        background-position: right top;
+    }
     #about {
         color: #F4F4FF;
         text-align: center;
@@ -863,6 +870,13 @@ td {
 }
 
 @media (min-width: 1200px) {
+    #home {
+        background: url("../images/blob.svg");
+        background-repeat: no-repeat;
+        /* background-size: 180vh, 600px; */
+        background-size: 90% auto;
+        background-position: right top;
+    }
     #home {
         min-height: 110vh;
     }
