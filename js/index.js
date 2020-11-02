@@ -38,17 +38,7 @@ function scrollFunction() {
 
 
 // init controller
-var controller = new ScrollMagic.Controller();
 
-
-new ScrollMagic.Scene({
-        triggerElement: "#about-title",
-        triggerHook: 0.9, // show, when scrolled 10% into view
-        duration: "95%", // hide 10% before exiting view (80% + 10% from bottom)
-        offset: 50 // move trigger to center of element
-    })
-    .setClassToggle("#about", "visible") // add class to reveal
-    .addTo(controller);
 
 var revealElements = document.getElementsByClassName("faq-card");
 for (let i = 0; i < revealElements.length; i++) {
