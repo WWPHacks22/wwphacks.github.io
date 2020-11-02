@@ -38,6 +38,7 @@ function scrollFunction() {
 
 
 // init controller
+var controller = new ScrollMagic.Controller();
 
 
 var revealElements = document.getElementsByClassName("faq-card");
