@@ -56,9 +56,9 @@ for (let i = 0; i < revealElements.length; i++) {
 
 
 document.getElementById("signup-button").onclick = function() {
-    location.href = "https://forms.gle/D7do9ftJQ2s9XHf48";
+    location.href = "https://forms.gle/k89kUrzJKCTYidHz7";
 }
 
 document.getElementById("discord-button").onclick = function() {
-    location.href = "https://discord.gg/rmzC5tx";
+    location.href = "https://discord.gg/8HAVggeyMv";
 }
