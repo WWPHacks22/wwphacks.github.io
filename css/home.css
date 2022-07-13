@@ -370,12 +370,12 @@ td {
     padding: 0 5vw;
 }
 
-#sponsor {
+#supporter {
     text-align: center;
     padding-bottom: 7em;
 }
 
-#sponsor h3 {
+#supporter h3 {
     background-image: linear-gradient(198.67deg, #F76CC6 7.01%, #5B6CF9 85.09%);
     background-clip: text;
     background-color: white;
@@ -386,19 +386,19 @@ td {
     text-align: center;
 }
 
-.sponsor-logo {
+.wwphacks-supporters {
     transform: scale(1);
     transition: 0.3s;
 }
 
-.sponsor-logo:hover,
-.sponsor-logo:focus,
-.sponsor-logo:active {
+.wwphacks-supporters:hover,
+.wwphacks-supporters:focus,
+.wwphacks-supporters:active {
     transform: scale(1.1);
     transition: 0.3s;
 }
 
-#sponsor .col {
+#supporter .col {
     margin: 2em 0;
 }
 
@@ -412,7 +412,7 @@ td {
     -moz-text-fill-color: transparent;
 }
 
-#sponsor a {
+#supporter a {
     padding: 0;
     font-size: 20px;
     text-align: center;
