@@ -56,7 +56,7 @@ for (let i = 0; i < revealElements.length; i++) {
 
 
 document.getElementById("signup-button").onclick = function() {
-    location.href = "https://wwphacks2022.devpost.com/";
+    location.href = "https://forms.gle/Coao6o8kDYFhscdb6";
 }
 
 document.getElementById("discord-button").onclick = function() {
